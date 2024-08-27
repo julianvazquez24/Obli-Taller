@@ -1,0 +1,486 @@
+/* COSAS GENERALES */
+
+:root{
+    --color-titulos-negros: rgb(0, 0, 0);
+    --color-celeste:rgb(63,135,154);
+    --color-gris-texto:rgb(142,142,142);
+    --color-gris-fondo:#f6f6f6;
+    --color-blanco:#ffffff; 
+}
+
+.resalte {
+    color: var(--color-celeste);
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(255,255,255,255)
+}
+
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+  
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* NAVEGACION */
+
+.header {
+    display: flex;
+    max-width: 1200px; 
+    margin: auto; 
+    padding: 10px; 
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+.logo {
+    max-width: 10rem; 
+    margin-right: 10px; 
+    margin-left: 0;
+    margin-top: 20px;
+}
+
+.navbar, .navbar-nav, .links {
+    display: flex;
+    justify-content: center; 
+    flex-grow: 1;
+    font-family: 'Anton', sans-serif; 
+    font-size: 18px; 
+    gap: 15px;
+    color:  var(--color-titulos-negros); 
+    margin-top: 10px; 
+    text-decoration: none; 
+}
+
+.navbar-nav a, .links a {
+    color:  var(--color-titulos-negros); 
+    padding: 10px;
+    text-decoration: none; 
+}
+
+.navbar-nav a:hover, .links a:hover {
+    color: var(--color-celeste); 
+}
+
+#resalte {
+    color:  var(--color-celeste); 
+    padding: 10px;
+    text-decoration: none; 
+}
+
+/* PANTALLAS CHICAS */
+@media (max-width: 768px) {
+    .header {
+        background-color: var(--color-blanco);
+        margin-bottom: 20px; 
+    }
+
+    .navbar, .navbar-nav {
+        background-color: var(--color-blanco);
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navbar-nav a {
+        color:var(--color-titulos-negros);
+        padding: 15px 20px;
+        text-align: center;
+    }
+}
+
+
+/* PARTE PAGINA ACTUAL */
+.pagina-actual {
+    width: 90%; 
+    max-width: 1400px; 
+    height: 250px; 
+    background-color: var(--color-gris-fondo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px auto;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px; 
+}
+
+@media (max-width: 1200px) {
+    .pagina-actual {
+        width: 95%; 
+    }
+}
+
+@media (max-width: 768px) {
+    .pagina-actual {
+        width: 100%; 
+        padding: 10px; 
+    }
+}
+
+.color-titulos-negros {
+    color: var(--color-titulos-negros);
+}
+
+.anton-regular {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem; 
+}
+
+.roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.pagina-actual h2 {
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+
+.pagina-actual-h2 a {
+    text-decoration: none;
+    color: var(--color-celeste);
+}
+
+.home-poppins-regular {
+    color: var(--color-titulos-negros);
+    text-decoration: none;
+}
+
+.contacto-poppins-regular {
+    color: var(--color-celeste);
+    text-decoration: none;
+}
+
+.roboto-thin {
+    font-family: "Roboto";
+    font-weight: 100;
+}
+
+/* EXPERIENCIA PERSONALIZACION*/
+
+#experiencia-personalizacion {
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#experiencia-personalizacion h3 {
+    letter-spacing: 3px;
+    font-size: 2rem;
+    color: var(--color-titulos-negros);
+    margin-bottom: 20px;
+}
+
+#experiencia-personalizacion p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    color: var(--color-gris-texto);
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+
+
+/* PARTE DE PERSONALIZACION */
+
+.container {
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+.container h1{
+    letter-spacing: 3px;
+    font-size: 2rem;
+    color: var(--color-titulos-negros);
+    margin-bottom: 20px;
+}
+
+
+.seccion {
+    margin-top: 40px;
+}
+.seccion h4 {
+    margin-bottom: 15px;
+    font-family: 'Anton', sans-serif;
+}
+.card {
+    cursor: pointer;
+}
+.card.selected {
+    border: 2px solid var(--color-celeste) ;
+    box-shadow: 4px 4px 4px var(--color-celeste);
+}
+
+/*VISTA PREVIA*/
+
+.container-custom {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.seccion-vista-previa, .seccion-entrega, .seccion {
+    margin-bottom: 40px;
+}
+
+.card {
+    margin-top: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+#boton-finalizar {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 0.75rem 1rem;
+    background-color: var(--color-titulos-negros);
+    color: var(--color-blanco);
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.4s;
+}
+
+#boton-finalizar:hover {
+    background-color: var(--color-celeste);
+}
+
+.seccion-vista-previa {
+
+    text-align: center;
+    margin-top: 40px;
+}
+.seccion-vista-previa h4 {
+    margin-bottom: 15px;
+    font-family: 'Anton', sans-serif;
+}
+
+.seccion-entrega {
+
+    text-align: center;
+    margin-top: 40px;
+}
+.seccion-entrega h4 {
+    margin-bottom: 15px;
+    font-family: 'Anton', sans-serif;
+}
+
+/*MOTIVATE PERSONALIZAR*/
+
+#motivate-personalizar {
+    margin-left: 30%;
+    display: inline-block;
+    margin-top: 7%;
+    text-align: center;
+    padding: 20px;
+}
+
+#motivate-personalizar h4 {
+    letter-spacing: 3px;
+    font-size: 2rem;
+    color: var(--color-titulos-negros);
+    margin-bottom: 20px;
+}
+
+#rosa{
+    background-color: #DCB9C3;
+}
+
+#celeste{
+    background-color:#A6CBC9;
+}
+
+
+
+/* TESTIMONIOS */
+#testimonios{
+    margin-top: 7%;
+    text-align: center;
+    padding: 20px;
+}
+
+#testimonios h3{
+    letter-spacing: 3px;
+    font-size: 2rem;
+    color: var(--color-titulos-negros);
+    margin-bottom: 20px;
+}
+
+.cartas-testimonios {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8rem; 
+}
+
+.testimonio{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 18rem; 
+    margin: 0;
+    text-align: center;
+}
+
+.testimonio img {
+    width: 18rem; 
+    height: 18rem;
+    object-fit:fill;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.testimonio:hover, .testimonio img:hover{
+    transform: translateY(-10px); 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.228);
+}
+
+.testimonio h4 {
+    font-family: "Anton", sans-serif; 
+    font-size: 1.6rem; 
+    color: var(--color-gris-oscuro); 
+    margin-top: 8px;
+}
+
+.testimonio p {
+    font-size: 1.2rem; 
+    color: var(--color-gris-texto);
+    line-height: 1.5; 
+    margin-bottom: 20px; 
+    padding: 0 20px; 
+}
+
+
+/*FOOTER*/
+
+footer {
+    background-color: var(--color-titulos-negros);
+    padding: 20px;
+    text-align: center;
+    color: var(--color-blanco); 
+}
+
+.logo-del-footer {
+    max-width: 12rem;
+    padding: 25px 0;
+}
+
+.texto-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.texto-footer h1 {
+    font-size: 1.25rem; 
+    padding: 20px 0;
+    margin: 0;
+}
+
+.iconos-redes-sociales {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.iconos-redes-sociales img {
+    width: 40px; 
+    height: 40px;
+}
+
+.iconos-redes-sociales hr {
+    border: 0;
+    color: #363636;
+    border-top: 3px solid var(--color-gris-fondo);
+    width: 35px;
+    margin: 0 1rem;
+    margin-top: 1rem;
+    height: 0;
+}
+
+.formas-de-pago {
+    padding: 100px 0;
+}
+
+.medios-pagos img {
+    max-width: 500px;
+    height: auto;
+}
+
+
+
+/* CARTAS E IMAGENES */
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; 
+}
+
+
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.col-md-3, .col-md-4 {
+    max-width: 25%; 
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .col-md-3, .col-md-4 {
+        max-width: 50%; 
+    }
+}
+
+@media (max-width: 576px) {
+    .col-md-3, .col-md-4 {
+        max-width: 100%; 
+    }
+}
+
+

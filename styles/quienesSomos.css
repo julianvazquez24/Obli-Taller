@@ -1,0 +1,400 @@
+/* COSAS GENERALES */
+
+:root{
+    --color-titulos-negros: rgb(0, 0, 0);
+    --color-celeste:rgb(63,135,154);
+    --color-gris-texto:rgb(142,142,142);
+    --color-gris-fondo:#f6f6f6;
+    --color-blanco:#ffffff; 
+}
+
+.resalte {
+    color: var(--color-celeste);
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(255,255,255,255)
+}
+
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+  
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* NAVEGACION */
+/* NAVEGACION */
+
+.header {
+    display: flex;
+    max-width: 1200px; 
+    margin: auto; 
+    padding: 10px; 
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+.logo {
+    max-width: 10rem; 
+    margin-right: 10px; 
+    margin-left: 0;
+    margin-top: 20px;
+}
+
+.navbar, .navbar-nav, .links {
+    display: flex;
+    justify-content: center; 
+    flex-grow: 1;
+    font-family: 'Anton', sans-serif; 
+    font-size: 18px; 
+    gap: 15px;
+    color:  var(--color-titulos-negros); 
+    margin-top: 10px; 
+    text-decoration: none; 
+}
+
+.navbar-nav a, .links a {
+    color:  var(--color-titulos-negros); 
+    padding: 10px;
+    text-decoration: none; 
+}
+
+.navbar-nav a:hover, .links a:hover {
+    color: var(--color-celeste); 
+}
+
+#resalte {
+    color:  var(--color-celeste); 
+    padding: 10px;
+    text-decoration: none; 
+}
+
+/* PANTALLAS CHICAS */
+@media (max-width: 768px) {
+    .header {
+        background-color: var(--color-blanco);
+        margin-bottom: 20px; 
+    }
+
+    .navbar, .navbar-nav {
+        background-color: var(--color-blanco);
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navbar-nav a {
+        color:var(--color-titulos-negros);
+        padding: 15px 20px;
+        text-align: center;
+    }
+}
+
+/* PAGINA ACTUAL */
+/* PARTE PAGINA ACTUAL */
+.pagina-actual {
+    width: 90%; 
+    max-width: 1400px; 
+    height: 250px; 
+    background-color: var(--color-gris-fondo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px auto; /* Add margin for spacing */
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px; 
+}
+
+@media (max-width: 1200px) {
+    .pagina-actual {
+        width: 95%; 
+    }
+}
+
+@media (max-width: 768px) {
+    .pagina-actual {
+        width: 100%; 
+        padding: 10px; 
+    }
+}
+
+.color-titulos-negros {
+    color: var(--color-titulos-negros);
+}
+
+.anton-regular {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem; 
+}
+
+.roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.pagina-actual h2 {
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+
+.pagina-actual-h2 a {
+    text-decoration: none;
+    color: var(--color-celeste);
+}
+
+.home-poppins-regular {
+    color: var(--color-titulos-negros);
+    text-decoration: none;
+}
+
+.contacto-poppins-regular {
+    color: var(--color-celeste);
+    text-decoration: none;
+}
+
+.roboto-thin {
+    font-family: "Roboto";
+    font-weight: 100;
+}
+
+
+
+/* PARTE NOSOTROS */
+
+.anton-regular-nosotros {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    text-align: left;
+    font-size: 2rem; 
+}
+
+.sobre-nosotros {
+    padding: 20px; 
+    margin: 20px auto; 
+    max-width: 100%;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.sobre-nosotros-texto {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.foto-texto-sobre-nosotros {
+    margin-right: 20px; 
+    flex: 1;
+    max-width: 500px;
+}
+
+.foto-sangria {
+    flex: 1;
+    max-width: 500px;
+}
+
+.foto-sangria img {
+    width: 100%;
+    height: auto;
+}
+
+.foto-texto-sobre-nosotros p {
+    font-size: 1em;
+    color: var(--color-gris-texto);
+    margin-bottom: 20px;
+}
+
+.anton-regular-button {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+}
+
+
+.boton-nuestras-mezclas {
+    text-align: center;
+    display: flex;
+    margin-top: 2rem;
+}
+
+
+.boton-nuestras-mezclas .btn {
+    border-radius: 0;
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+}
+
+.boton-nuestras-mezclas .btn:hover {
+    background-color: var(--color-celeste);
+    border-color:var(--color-celeste);
+    color: var(--color-blanco);
+} 
+
+
+
+
+
+
+
+
+
+.conoce-nuestro-equipo h2 {
+    font-family: "Anton", sans-serif;
+    font-size: 2rem;
+    color: var(--color-titulos-negros);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.nuestro-equipo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+.equipo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 350px;
+    margin: 0;
+    text-align: center;
+}
+
+.equipo img {
+    width: 90%;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.equipo h3 {
+    font-family: "Anton", sans-serif;
+    font-size: 1.25rem;
+    color: #333;
+    margin-top: 10px;
+}
+
+.equipo p {
+    font-size: 1em;
+    color: var(--color-gris-texto);
+    line-height: 1.6;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+
+
+
+
+.nuestra-filosofia {
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.nuestra-filosofia h3 {
+    font-size: 2rem;
+    color: var(--color-titulos-negros);
+    margin-bottom: 20px;
+}
+
+.nuestra-filosofia p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: var(--color-gris-texto);
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+.roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+
+
+
+
+
+
+footer {
+    background-color: var(--color-titulos-negros);
+    padding: 20px;
+    text-align: center;
+    color: var(--color-blanco); 
+}
+
+.logo-del-footer {
+    max-width: 12rem;
+    padding: 25px 0;
+}
+
+.texto-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.texto-footer h1 {
+    font-size: 1.25rem; 
+    padding: 20px 0;
+    margin: 0;
+}
+
+.iconos-redes-sociales {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.iconos-redes-sociales img {
+    width: 40px; 
+    height: 40px;
+}
+
+.iconos-redes-sociales hr {
+    border: 0;
+    color: #363636;
+    border-top: 3px solid var(--color-gris-fondo);
+    width: 35px;
+    margin: 0 1rem;
+    margin-top: 1rem;
+    height: 0;
+}
+
+.formas-de-pago {
+    padding: 100px 0;
+}
+
+.medios-pagos img {
+    max-width: 500px;
+    height: auto;
+}

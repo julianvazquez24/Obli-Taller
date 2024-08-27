@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alcomix</title>
+        <link rel="stylesheet" href="../styles/personalizar.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script src="../scripts/personalizar.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header class="header">
+            <nav class="navbar navbar-expand-lg">
+            <div class="container-lg">
+                <img class="logo" id="Logo" src="../images/logoAlcomixNegro.png" alt="Logo Alcomix" aria-label="Logo Alcomix">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="../index.html" aria-label="Pagina de Inicio">HOME</a>
+                    <a class="nav-link" id="resalte" href="../pages/personalizar.html" aria-label="Pagina de Personalización">PERSONALIZÁ TU SANGRÍA</a>
+                    <a class="nav-link" href="../pages/quienesSomos.html" aria-label="Pagina Sobre Nosotros">QUIÉNES SOMOS</a>
+                    <a class="nav-link" href="../pages/contacto.html" aria-label="Pagina de Contacto">CONTACTO</a>
+                    <a class="nav-link" href="../pages/mezclas.html" aria-label="Pagina Nuestras Mezclas">MEZCLAS</a>
+                </div>
+                </div>
+            </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="pagina-actual">
+                <h1 class="anton-regular color-titulos-negros">Personalizá tu Sangría</h1>
+                <h2 id="pagina-actual-h2">
+                    <a id="pagina-actual-h2-a" href="../index.html" class="home-poppins-regular poppins-regular">Home /</a>
+                    <a id="pagina-actual-h2-a" href="../pages/contacto.html" class="contacto-poppins-regular poppins-regular">Personalizá tu Sangría</a>
+                </h2>
+            </div>
+
+            <section id="experiencia-personalizacion">
+                <h3 class="anton-regular">BIENVENIDO A LA EXPERIENCIA DE PERSONALIZACIÓN DE ALCOMIX</h3>
+                <p>Aquí puedes crear la sangría perfecta para cualquier ocasión, combinando una amplia variedad de ingredientes frescos y de alta calidad. Sigue los pasos a continuación para diseñar tu mezcla única y sorprende a tus invitados con una bebida exquisita y personalizada.</p> 
+            </section>
+
+
+
+        
+            <section class="container">
+                <h1 class="anton-regular">PERSONALIZÁ TU SANGRÍA</h1>
+
+                <!--Vino Base -->
+                <section class="seccion">
+                    <h4 class="subtitulo">1. Selección del Vino Base</h4>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card" data-vino="tinto">
+                                <img src="../images/vino tinto.jpg" class="card-img-top" alt="Vino Tinto">
+                                <div class="card-body">
+                                    <h5 class="card-title">Vino Tinto</h5>
+                                    <p class="card-text">Rico y robusto, ideal para una sangría tradicional con sabores profundos y complejos.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card" data-vino="blanco">
+                                <img src="/images/vino blanco.jpg" class="card-img-top" alt="Vino Blanco">
+                                <div class="card-body">
+                                    <h5 class="card-title">Vino Blanco</h5>
+                                    <p class="card-text">Ligero y refrescante, perfecto para una sangría más ligera y veraniega.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card" data-vino="rosado">
+                                <img src="/images/vino rosado copa.jpg" class="card-img-top" alt="Vino Rosado">
+                                <div class="card-body">
+                                    <h5 class="card-title">Vino Rosado</h5>
+                                    <p class="card-text">Delicado y afrutado, combina lo mejor del tinto y el blanco para una mezcla versátil y deliciosa.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--Frutas Frescas -->
+                <section class="seccion">
+                    <h4 class="subtitulo">2. Añade Frutas Frescas</h4>
+                    <div class="row">
+
+                        <div class="col-md-3">
+                            <div class="card" data-fruta="naranjas">
+                                <img src="/images/naranja.jpg" class="card-img-top" alt="Naranjas">
+                                <div class="card-body">
+                                    <h5 class="card-title">Naranjas</h5>
+                                    <p class="card-text">Añaden un toque cítrico y refrescante.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="card" data-fruta="limones">
+                                <img src="/images/limon foto.png" class="card-img-top" alt="Limones">
+                                <div class="card-body">
+                                    <h5 class="card-title">Limones</h5>
+                                    <p class="card-text">Perfectos para un sabor ácido y fresco.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="card" data-fruta="manzanas">
+                                <img src="/images/manzana foto.avif" class="card-img-top" alt="Manzanas">
+                                <div class="card-body">
+                                    <h5 class="card-title">Manzanas</h5>
+                                    <p class="card-text">Aportan dulzura y un ligero crujido.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="card" data-fruta="fresas">
+                                <img src="/images/fresa foto.jpg" class="card-img-top" alt="Fresas">
+                                <div class="card-body">
+                                    <h5 class="card-title">Fresas</h5>
+                                    <p class="card-text">Dulces y jugosas, ideales para un toque veraniego.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="card" data-fruta="melocotones">
+                                <img src="/images/melocoton foto.jpg" class="card-img-top" alt="Melocotones">
+                                <div class="card-body">
+                                    <h5 class="card-title">Melocotones</h5>
+                                    <p class="card-text">Suaves y dulces, añaden un sabor delicado.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="card" data-fruta="uvas">
+                                <img src="/images/uva foto.jpg" class="card-img-top" alt="Uvas">
+                                <div class="card-body">
+                                    <h5 class="card-title">Uvas</h5>
+                                    <p class="card-text">Aportan dulzura y textura.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="card" data-fruta="frambuesas">
+                                <img src="/images/frambuesa foto.png" class="card-img-top" alt="Frambuesas">
+                                <div class="card-body">
+                                    <h5 class="card-title">Frambuesas</h5>
+                                    <p class="card-text">Añaden un toque ácido y color vibrante.</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="col-md-3">
+                            <div class="card" data-fruta="piñas">
+                                <img src="/images/piña foto.jpg" class="card-img-top" alt="Piñas">
+                                <div class="card-body">
+                                    <h5 class="card-title">Piñas</h5>
+                                    <p class="card-text">Exóticas y dulces, perfectas para una sangría tropical.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--Edulcorantes -->
+                <section class="seccion">
+                    <h4 class="subtitulo">3. Selección de Edulcorantes</h4>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="card" data-edulcorante="azucarBlanca">
+                                <img src="/images/azucar blanca foto.jpg" class="card-img-top" alt="Azúcar Blanca">
+                                <div class="card-body">
+                                    <h5 class="card-title">Azúcar Blanca</h5>
+                                    <p class="card-text">El clásico edulcorante para una dulzura equilibrada.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card" data-edulcorante="azucarMorena">
+                                <img src="/images/azucar morena foto.webp" class="card-img-top" alt="Azúcar Morena">
+                                <div class="card-body">
+                                    <h5 class="card-title">Azúcar Morena</h5>
+                                    <p class="card-text">Añade un toque de caramelo y profundidad.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card" data-edulcorante="miel">
+                                <img src="/images/miel foto.jpg" class="card-img-top" alt="Miel">
+                                <div class="card-body">
+                                    <h5 class="card-title">Miel</h5>
+                                    <p class="card-text">Natural y suave, perfecta para una dulzura ligera.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card" data-edulcorante="stevia">
+                                <img src="/images/stevia foto.jpg" class="card-img-top" alt="Stevia">
+                                <div class="card-body">
+                                    <h5 class="card-title">Stevia</h5>
+                                    <p class="card-text">Dulce y saludable, ideal para una opción más natural.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--Licores Adicionales -->
+                <section class="seccion">
+                    <h4 class="subtitulo">4. Añade Licores Adicionales</h4>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="card" data-licor="brandy">
+                                <img src="/images/brandy foto.jpg" class="card-img-top" alt="Brandy">
+                                <div class="card-body">
+                                    <h5 class="card-title">Brandy</h5>
+                                    <p class="card-text">Añade riqueza y un toque de sofisticación.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card" data-licor="tripleSec">
+                                <img src="/images/triple sec foto.jpg" class="card-img-top" alt="Triple Sec">
+                                <div class="card-body">
+                                    <h5 class="card-title">Triple Sec</h5>
+                                    <p class="card-text">Aporta un sabor cítrico y dulce.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card" data-licor="vodka">
+                                <img src="/images/vodka foto.webp" class="card-img-top" alt="Vodka">
+                                <div class="card-body">
+                                    <h5 class="card-title">Vodka</h5>
+                                    <p class="card-text">Neutro y versátil, realza los sabores de las frutas.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card" data-licor="ron">
+                                <img src="/images/ron foto.jpg" class="card-img-top" alt="Ron">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ron</h5>
+                                    <p class="card-text">Perfecto para una sangría tropical con un toque caribeño.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--Especias y Hierbas-->
+                <section class="seccion">
+                    <h4 class="subtitulo">5. Especias y Hierbas</h4>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="card" data-especia="canela">
+                                <img src="/images/canela foto.jpg" class="card-img-top" alt="Canela">
+                                <div class="card-body">
+                                    <h5 class="card-title">Canela</h5>
+                                    <p class="card-text">Aporta calidez y un sabor especiado.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card" data-especia="menta">
+                                <img src="/images/menta foto.jpg" class="card-img-top" alt="Menta">
+                                <div class="card-body">
+                                    <h5 class="card-title">Menta</h5>
+                                    <p class="card-text">Refrescante y vibrante, perfecta para el verano.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card" data-especia="albahaca">
+                                <img src="/images/albahaca foto.jpg" class="card-img-top" alt="Albahaca">
+                                <div class="card-body">
+                                    <h5 class="card-title">Albahaca</h5>
+                                    <p class="card-text">Un toque herbal que añade frescura.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card" data-especia="clavo">
+                                <img src="/images/clavo foto.jpg" class="card-img-top" alt="Clavo">
+                                <div class="card-body">
+                                    <h5 class="card-title">Clavo</h5>
+                                    <p class="card-text">Añade un toque picante y aromático.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </section>
+            
+            
+            <!-- Contenedor General -->
+            <div class="container-custom">
+                <!-- Sección de Vista Previa y Ajustes -->
+                <section class="seccion-vista-previa">
+                    <h4 class="subtitulo">6. Vista Previa y Ajustes</h4>
+                    <div class="row justify-content-center">
+                        <div class="col-md-10">
+                            <div id="vistaPrevia" class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Vista Previa de tu Sangría</h5>
+                                    <ul id="listaIngredientes" class="list-group">
+                                    <!-- Ingredientes seleccionados se mostrarán aquí -->
+                                    </ul>
+                                    <p class="card-text mt-3">Puedes modificar las cantidades y proporciones según tus preferencias.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Sección de Programación de la Entrega -->
+                <section class="seccion-entrega">
+                    <h4 class="subtitulo">7. Programación de la Entrega</h4>
+                    <div class="row justify-content-center">
+                        <div class="col-md-5">
+                            <div class="mb-3">
+                                <label for="fechaEntrega" class="form-label">Fecha de Entrega</label>
+                                <input type="date" class="form-control" id="fechaEntrega">
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="mb-3">
+                                <label for="opcionesEnvio" class="form-label">Opciones de Envío</label>
+                                <select class="form-select" id="opcionesEnvio">
+                                    <option value="estandar">Entrega Estándar</option>
+                                    <option value="expres">Entrega Exprés</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Botón Final para Enviar -->
+                <section class="seccion text-center">
+                    <button id="boton-finalizar">Finalizar Personalización y Enviar Pedido</button>
+                </section>
+            </div>
+
+            <section id="motivate-personalizar">
+                <h3 class="anton-regular">¿POR QUÉ PERSONALIZAR TU SANGRÍA CON ALCOMIX?</h2>
+                <div class="card-container">
+                    <div class="card" id="rosa">
+                        <h4>Experiencia Única</h4>
+                        <p>Disfruta de una sangría que refleje tus gustos y preferencias únicas.</p>
+                    </div>
+                    <div class="card" id="celeste">
+                        <h4>Ingredientes de Alta Calidad</h4>
+                        <p>Solo utilizamos frutas frescas y licores de calidad premium.</p>
+                    </div>
+                    <div class="card" id="rosa">
+                        <h4>Flexibilidad</h4>
+                        <p>Crea la mezcla perfecta para cualquier ocasión, desde una cena íntima hasta una gran fiesta.</p>
+                    </div>
+                    <div class="card" id="celeste">
+                        <h4>Comodidad</h4>
+                        <p>Recibe tu sangría personalizada directamente en tu puerta, sin complicaciones.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="testimonios">
+                <h3 class="anton-regular">TESTIMONIOS</h3>
+                <div class="cartas-testimonios">
+                    <div class="testimonio">
+                        <img src="/images/foto-testimonio-izquierda.png" class="imagen-testimonio" alt="Ana Lopez" aria-label="Cliente de Alcomix">
+                        <h4>Ana Lopez</h4>
+                        <p>Alcomix hizo que mi boda fuera aún más especial. La sangría personalizada fue un gran éxito entre los invitados. ¡Definitivamente los volveré a elegir!</p>
+                    </div>
+                    <div class="testimonio">
+                        <img src="/images/foto-testimonio-medio.png" class="imagen-testimonio" alt="Roberto García" aria-label="Cliente de Alcomix">
+                        <h4>Roberto García</h4>
+                        <p>Hemos usado Alcomix para varios eventos corporativos y siempre nos impresionan con su calidad y servicio. ¡Totalmente recomendados!</p>
+                    </div>
+                    <div class="testimonio">
+                        <img src="/images/foto-testimonio-derecha.png" class="imagen-testimonio" alt="Laura Martinez" aria-label="Cliente de Alcomix">
+                        <h4>Laura Martinez</h4>
+                        <p>La facilidad de uso del sitio web y la calidad de la sangría de Alcomix es insuperable. ¡Mis fiestas nunca han sido mejores!</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <img class="logo-del-footer" src="../images/logoAlcomixBlanco.png" alt="Logo blanco de Alcomix">
+            <div class="texto-footer">
+                <h1>¡Síguenos en nuestras redes sociales para enterarte de las últimas novedades y promociones!</h1>
+                <div class="iconos-redes-sociales">
+                    <a href="https://facebook.com" aria-label="Ir a la página de Facebook de Alcomix" target="_blank" rel="noopener noreferrer">
+                        <img src="../images/facebook.png" alt="Icono de Facebook">
+                    </a>
+                    <hr>
+                    <a href="https://instagram.com" aria-label="Ir a la página de Instagram de Alcomix" target="_blank" rel="noopener noreferrer">
+                        <img src="../images/instagram.png" alt="Icono de Instagram">
+                    </a>
+                    <hr>
+                    <a href="https://twitter.com" aria-label="Ir a la página de Twitter de Alcomix" target="_blank" rel="noopener noreferrer">
+                        <img src="../images/twitter.png" alt="Icono de Twitter">
+                    </a>
+                </div>
+                <div class="formas-de-pago">
+                    <img src="../images/formasDePago.jpeg" alt="Iconos de los medios de pagos">
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
